@@ -1,19 +1,32 @@
-import "./App.scss";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Landingspage from "./pages/Landingspage";
-import About from "./pages/About";
+
+import "./assets/App.scss";
+import { NavLink, Routes, Route, Navigate } from "react-router-dom";
+import { PageWelcome } from "./pages/PageWelcome";
+import { PageInfo } from "./pages/PageInfo";
+import { PageAbout } from "./pages/PageAbout";
+
 
 function App() {
   return (
     <>
-      <Router>
-        <Header></Header>
+
+
+      <div className="App">
+        <h1>Info Site</h1>
+        <nav>
+          <NavLink to="/welcome">Welcome</NavLink>
+          <NavLink to="/info">Info</NavLink>
+          <NavLink to="/about">About</NavLink>
+        </nav>
+
         <Routes>
-          <Route index element={<Landingspage />}></Route>
-          <Route path="/about" element={<About />}></Route>
+          <Route path="/welcome" element={<PageWelcome />} />
+          <Route path="/info" element={<PageInfo />} />
+          <Route path="/about" element={<PageAbout />} />
+          <Route path="/" element={<Navigate to="/welcome" replace />} />
         </Routes>
-      </Router>
+      </div>
+
     </>
   );
 }
