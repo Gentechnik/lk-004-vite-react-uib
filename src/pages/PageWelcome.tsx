@@ -2,7 +2,7 @@ export const PageWelcome = () => {
   return (
     <>
       <main>
-        <section>
+        <section className="welcome_page_heading">
           <h1>Hi and welcome, to my first shot at a React Page!</h1>
           <p>down below are some of the Projects I worked on up until now</p>
         </section>
