@@ -1,12 +1,16 @@
+
 import "./assets/App.scss";
 import { NavLink, Routes, Route, Navigate } from "react-router-dom";
 import { PageWelcome } from "./pages/PageWelcome";
 import { PageInfo } from "./pages/PageInfo";
 import { PageAbout } from "./pages/PageAbout";
 
+
 function App() {
   return (
     <>
+
+
       <div className="App">
         <h1>Info Site</h1>
         <nav>
@@ -22,6 +26,7 @@ function App() {
           <Route path="/" element={<Navigate to="/welcome" replace />} />
         </Routes>
       </div>
+
     </>
   );
 }
