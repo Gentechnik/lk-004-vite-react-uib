@@ -22,6 +22,10 @@ function App() {
           <Route path="/" element={<Navigate to="/welcome" replace />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
+
+        <footer>
+          <p>I am a placeholder footer</p>
+        </footer>
       </div>
     </>
   );
