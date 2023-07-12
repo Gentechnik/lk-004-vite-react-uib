@@ -17,8 +17,10 @@ export const PageMedia = () => {
             <div className="content_card_text">
               <h4>the Pillows - Runners High</h4>
               <p>
-                Nectar is the second studio album by Japanese singer-songwriter
-                Joji, released on 25 September 2020 via 88rising.
+                Runners High is an album released by the Pillows on January 22,
+                1999. It was the last album to feature guest bassist, Tatsuya
+                Kashima. Several songs from the record were later featured in
+                the anime OVA series FLCL by Gainax.
               </p>
             </div>
           </div>
