@@ -8,15 +8,21 @@ export const PageWelcome = () => {
         </section>
         <section className="welcome_page_container">
           <div className="welcome_page_item">
+            <a href="#">My First HTML/CSS Site</a>
+            <p>
+              This Site was created by me towards the end of my
+              Orientationcourse.
+            </p>
+            <img src="https://placehold.co/600x400" alt="Placeholder image" />
+          </div>
+          <div className="welcome_page_item">
+            <a href="#">New Project #1</a>
             <p>Item 1</p>
             <img src="https://placehold.co/600x400" alt="Placeholder image" />
           </div>
           <div className="welcome_page_item">
-            <p>Item 2</p>
-            <img src="https://placehold.co/600x400" alt="Placeholder image" />
-          </div>
-          <div className="welcome_page_item">
-            <p>Item 3</p>
+            <a href="#">New Project #2</a>
+            <p>Coming Soon!</p>
             <img src="https://placehold.co/600x400" alt="Placeholder image" />
           </div>
         </section>
