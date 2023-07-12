@@ -13,18 +13,19 @@ body {
   font-family: $main_font;
   a {
     text-decoration: none;
+    font-family: $secondary_font;
   }
   nav {
     display: flex;
     justify-content: space-evenly;
     a {
-      margin-top: 2%;
-      padding: 0.3em 0.4em;
-      min-width: 7rem;
+      margin: 5% 0;
+      padding: 0.5em 0.6em;
+      min-width: 9rem;
       text-align: center;
       background-color: white;
       border-radius: 25px;
-      font-size: 1.2rem;
+      font-size: 1.6rem;
       font-weight: bold;
       color: rgb(0, 195, 255);
     }
@@ -44,7 +45,7 @@ body {
         text-align: center;
         h1 {
           display: block;
-          font-size: 2rem;
+          font-size: 2.5rem;
           color: $heading_color;
           font-family: $heading_font;
           margin: 2% 0;
@@ -82,7 +83,6 @@ body {
       h2 {
         text-align: center;
         width: 90%;
-        margin-top: 5%;
       }
       section.media_page_music,
       section.media_page_games,
@@ -93,7 +93,9 @@ body {
         gap: 2rem;
         color: rgb(0, 0, 0);
         h3 {
-          margin-top: 5%;
+          font-family: $heading_font;
+          font-size: 1.6rem;
+          margin: 6% 0 0 0;
           // outline: 2px solid red;
         }
         div.content_card {
@@ -105,16 +107,21 @@ body {
             margin: 2.5% 0 2.5% 2.5%;
             object-fit: cover;
             width: 50%;
-            height: auto;
           }
           div.content_card_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5%;
+            width: 50%;
             margin: 2.5%;
             h4 {
-              font-size: 1.1rem;
+              font-size: 1.4rem;
             }
-          }
-          &:last-of-type {
-            margin-bottom: 2%;
+            p {
+              font-size: 1.2rem;
+            }
           }
         }
       }
