@@ -126,6 +126,34 @@ body {
         }
       }
     }
+    &.about_page {
+      section.personal_info {
+        width: 100%;
+        margin: 10% 0;
+        div {
+          display: flex;
+          width: clamp(200px, 30vw, 900px);
+          height: clamp(200px, 30vw, 900px);
+          margin: 0 auto;
+          outline: 2px solid rgb(255, 255, 255);
+          transform: rotate(-45deg);
+          overflow: hidden;
+          img {
+            transform: rotate(45deg) scale(1.5);
+          }
+        }
+      }
+    }
+  }
+  main.page_not_found {
+    height: 90svh;
+    display: flex;
+    justify-content: center;
+    div.rick_roll {
+      img {
+        width: 100%;
+      }
+    }
   }
   footer {
     display: flex;
