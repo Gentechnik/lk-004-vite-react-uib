@@ -1,2 +1,2 @@
-@use "./App.scss";
-@use "./mediaqueries.scss";
+@use "./App.scss" as *;
+@use "./mediaqueries.scss" as *;

@@ -3,14 +3,19 @@ export const PageAbout = () => {
     <>
       <main className="about_page">
         <section className="personal_info">
-          <div>
+          <div className="personal_photo">
             <img src="/images/profile-picture.jpg" alt="" />
           </div>
-          <p>
-            This is a demo text with Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. At aperiam non aut provident quaerat temporibus
-            illum sit, possimus dicta sunt.
-          </p>
+          <div className="personal_text">
+            <p>
+              Hi again, as this is just an early try at a deeper look into SASS
+              and some of the basics of React, I'm trying out new stuff and see
+              what works. It has been an interesting Journey for me and I am
+              curious to see where it will lead me eventually. If anything I
+              hope you have a good one and find what you're looking for, Take
+              care.
+            </p>
+          </div>
         </section>
       </main>
     </>
