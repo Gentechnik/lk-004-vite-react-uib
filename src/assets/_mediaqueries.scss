@@ -113,17 +113,17 @@
   body {
     nav {
       a {
-        margin: 5% 0;
+        margin: 3% 0;
         padding: 0.5em 0.6em;
-        min-width: 27rem;
+        min-width: 33rem;
         border-radius: 100px;
-        font-size: 5rem;
+        font-size: 6rem;
       }
     }
     main {
       &.welcome_page {
         section.welcome_page_heading {
-          padding: 2% 0 5% 0;
+          padding: 0 0 6% 0;
           h1 {
             font-size: 5.5rem;
             margin: 2% 0;

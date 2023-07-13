@@ -24,7 +24,21 @@ function App() {
         </Routes>
 
         <footer>
-          <p>I am a placeholder footer</p>
+          <h3>
+            If you want to reach out to me, down below are my Github and 2
+            random links
+          </h3>
+          <ul>
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
         </footer>
       </div>
     </>
