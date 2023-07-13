@@ -25,7 +25,21 @@ body {
       border-radius: 25px;
       font-size: 1.6rem;
       font-weight: bold;
-      color: rgb(0, 195, 255);
+      color: $link_color;
+
+      &:nth-of-type(1):hover {
+        -webkit-animation: wobble-ver-right 0.8s both;
+        animation: wobble-ver-right 0.8s both;
+      }
+
+      &:nth-of-type(2):hover {
+        -webkit-animation: wobble-hor-top 0.8s both;
+        animation: wobble-hor-top 0.8s both;
+      }
+      &:nth-of-type(3):hover {
+        -webkit-animation: wobble-ver-left 0.8s both;
+        animation: wobble-ver-left 0.8s both;
+      }
     }
   }
   main {
@@ -133,7 +147,7 @@ body {
     &.about_page {
       section.personal_info {
         width: 100%;
-        margin: clamp(10%, 5vh, 30%) 0 clamp(10%, 5vh, 30%);
+        margin: clamp(10%, 5vh, 30%) 0 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -180,23 +194,41 @@ body {
     }
   }
   footer {
-    margin-top: 5svh;
-    height: 10svh;
+    margin: 5svh 0 0 0;
+    padding: 0 0 2svh 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
     inset: auto 0 0 0;
     flex-direction: column;
-
+    h3 {
+      color: $link_color;
+      padding: 1.5em 5vw;
+      text-align: center;
+      text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.1),
+        -1px 1px 1px hsla(0, 0%, 0%, 0.1), -1px -1px 1px hsla(0, 0%, 0%, 0.1),
+        1px -1px 1px hsla(0, 0%, 0%, 0.1);
+    }
     ul {
-      outline: 2px solid red;
       display: flex;
+      justify-content: center;
+      gap: 3.5rem;
       li {
         list-style: none;
-        &:nth-of-type(1) {
-          a {
-            font-size: 4rem;
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 60px;
+          width: 60px;
+          // outline: 1px solid red;
+          color: $link_icon_color;
+          font-size: 4.5rem;
+          border-radius: 45px;
+          &:hover {
+            -webkit-animation: jello-diagonal-2 0.8s both;
+            animation: jello-diagonal-2 0.8s both;
           }
         }
       }
