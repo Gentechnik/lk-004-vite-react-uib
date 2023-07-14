@@ -1,3 +1,4 @@
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 export const PageMedia = () => {
   return (
     <>
@@ -6,8 +7,15 @@ export const PageMedia = () => {
           This is an overview of media I enjoyed over the years and generally
           can recommend.
         </h2>
-        <section className="media_page_music">
-          <h3>MUSIC</h3>
+        <section className="media_page_music" id="media_music_link">
+          <div className="media_page_headings">
+            <a href="#media_music_link">MUSIC</a>
+            <a href="#media_games_link">GAMES</a>
+            <a href="#media_manga_link">MANGA</a>
+            <a href="#">
+              <BsFillArrowUpCircleFill />
+            </a>
+          </div>
           <div className="content_card">
             <img
               src="images/music/runners-high-pillows.jpg"
@@ -93,8 +101,15 @@ export const PageMedia = () => {
             </div>
           </div>
         </section>
-        <section className="media_page_games">
-          <h3>Games</h3>
+        <section className="media_page_games" id="media_games_link">
+          <div className="media_page_headings">
+            <a href="#media_music_link">MUSIC</a>
+            <a href="#media_games_link">GAMES</a>
+            <a href="#media_manga_link">MANGA</a>
+            <a href="#">
+              <BsFillArrowUpCircleFill />
+            </a>
+          </div>
           <div className="content_card">
             <img
               src="images/games/bioshock.jpg"
@@ -193,8 +208,15 @@ export const PageMedia = () => {
             </div>
           </div>
         </section>
-        <section className="media_page_manga">
-          <h3>Manga</h3>
+        <section className="media_page_manga" id="media_manga_link">
+          <div className="media_page_headings">
+            <a href="#media_music_link">MUSIC</a>
+            <a href="#media_games_link">GAMES</a>
+            <a href="#media_manga_link">MANGA</a>
+            <a href="#">
+              <BsFillArrowUpCircleFill />
+            </a>
+          </div>
           <div className="content_card">
             <img
               src="images/manga/a-silent-voice.jpg"
