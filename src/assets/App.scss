@@ -120,6 +120,7 @@ body {
           flex-grow: 1;
           width: 100%;
           min-height: 300px;
+          height: clamp(300px, 90%, 850px);
           display: flex;
           background-color: $card_bg_color;
           img {
