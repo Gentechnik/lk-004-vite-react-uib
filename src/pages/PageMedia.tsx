@@ -12,9 +12,11 @@ export const PageMedia = () => {
             <a href="#media_music_link">MUSIC</a>
             <a href="#media_games_link">GAMES</a>
             <a href="#media_manga_link">MANGA</a>
-            <a href="#">
-              <BsFillArrowUpCircleFill />
-            </a>
+            <div>
+              <a href="#">
+                <BsFillArrowUpCircleFill />
+              </a>
+            </div>
           </div>
           <div className="content_card">
             <img
@@ -106,9 +108,6 @@ export const PageMedia = () => {
             <a href="#media_music_link">MUSIC</a>
             <a href="#media_games_link">GAMES</a>
             <a href="#media_manga_link">MANGA</a>
-            <a href="#">
-              <BsFillArrowUpCircleFill />
-            </a>
           </div>
           <div className="content_card">
             <img
@@ -213,9 +212,6 @@ export const PageMedia = () => {
             <a href="#media_music_link">MUSIC</a>
             <a href="#media_games_link">GAMES</a>
             <a href="#media_manga_link">MANGA</a>
-            <a href="#">
-              <BsFillArrowUpCircleFill />
-            </a>
           </div>
           <div className="content_card">
             <img
