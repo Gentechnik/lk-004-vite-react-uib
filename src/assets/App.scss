@@ -248,12 +248,37 @@ body {
     }
     &.randomizer_page {
       // outline: 2px solid red;
+      flex-direction: column;
+
       div {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
-        outline: 2px solid rgb(255, 151, 151);
+        gap: 2rem;
+        // outline: 2px solid rgb(255, 151, 151);
+        h2 {
+          font-size: 3.4rem;
+        }
+        p {
+          // outline: 2px solid red;
+          font-size: 2rem;
+          &.current_member {
+            border-radius: 25px;
+            padding: 0.6rem 1.3rem;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.5);
+          }
+        }
+        button {
+          margin-top: 0.5rem;
+          padding: 0.6rem 1rem;
+          font-size: 1rem;
+          font-weight: bold;
+          border-radius: 25px;
+          outline: 2px solid red;
+          color: white;
+          background-color: rgb(95, 133, 255);
+        }
       }
     }
     &.about_page {
