@@ -1,20 +1,24 @@
 import React, { useState } from "react";
+import { randomPick, randomizer } from "./Randomizer";
+import memberList from "../data/memberList.json";
+import { Member } from "./Interfaces";
 
 function MyButtonComponent() {
-  // Define a state variable to track the button click
-  const [buttonClicked, setButtonClicked] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Function to handle button click
   const handleClick = () => {
-    // Perform your desired action here
-    // For example, toggle a state variable
-    setButtonClicked(!buttonClicked);
+    setCurrentIndex(randomizer(memberList));
+    while (true) {}
   };
 
   return (
     <div>
-      <button onClick={handleClick}>Click Me</button>
-      {buttonClicked && <p>Button clicked!</p>}
+      <h1>Number Iterator</h1>
+      <p>Person:</p>
+      <p>
+        {memberList[currentIndex].firstName} {memberList[currentIndex].lastName}
+      </p>
+      <button onClick={handleClick}>Next Number</button>
     </div>
   );
 }

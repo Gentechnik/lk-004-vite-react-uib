@@ -246,6 +246,16 @@ body {
         }
       }
     }
+    &.randomizer_page {
+      // outline: 2px solid red;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        outline: 2px solid rgb(255, 151, 151);
+      }
+    }
     &.about_page {
       section.personal_info {
         width: 100%;
