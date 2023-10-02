@@ -82,6 +82,28 @@
           }
         }
       }
+      &.randomizer_page {
+        div {
+          gap: 2rem;
+          // outline: 2px solid rgb(255, 151, 151);
+          h2 {
+            font-size: 4.4rem;
+          }
+          p {
+            // outline: 2px solid red;
+            font-size: 3rem;
+            &.current_member {
+              padding: 1rem 1.7rem;
+            }
+          }
+          button {
+            margin-top: 0.5rem;
+            padding: 1rem 1.4rem;
+            font-size: 2rem;
+            // outline: 2px solid red;
+          }
+        }
+      }
       &.about_page {
         section.personal_info {
           margin: clamp(10%, 5vh, 30%) 0 clamp(10%, 5vh, 30%);
@@ -219,6 +241,28 @@
                 font-size: 3rem;
               }
             }
+          }
+        }
+      }
+      &.randomizer_page {
+        div {
+          gap: 2rem;
+          // outline: 2px solid rgb(255, 151, 151);
+          h2 {
+            font-size: 5.4rem;
+          }
+          p {
+            // outline: 2px solid red;
+            font-size: 4rem;
+            &.current_member {
+              padding: 1.4rem 2.1rem;
+            }
+          }
+          button {
+            margin-top: 0.5rem;
+            padding: 1.4rem 1.8rem;
+            font-size: 3rem;
+            // outline: 2px solid red;
           }
         }
       }
