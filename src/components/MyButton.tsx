@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { randomizer } from "./Randomizer";
 import memberList from "../data/memberList.json";
-import { Member } from "./Interfaces";
 
 function MyButtonComponent() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
