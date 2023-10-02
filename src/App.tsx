@@ -3,7 +3,7 @@ import { NavLink, Routes, Route, Navigate } from "react-router-dom";
 import { PageWelcome } from "./pages/PageWelcome";
 import { PageMedia } from "./pages/PageMedia";
 import { PageAbout } from "./pages/PageAbout";
-import { PageRandomizer } from "./pages/PageRandomizer";
+import { PageRandom } from "./pages/PageRandom";
 import { PageNotFound } from "./pages/PageNotFound";
 import { AiOutlineTwitter, AiFillGithub } from "react-icons/ai";
 import { FaRandom } from "react-icons/fa";
@@ -22,7 +22,7 @@ function App() {
         <Routes>
           <Route path="/welcome" element={<PageWelcome />} />
           <Route path="/media" element={<PageMedia />} />
-          <Route path="/randomizer" element={<PageRandomizer />} />
+          <Route path="/randomizer" element={<PageRandom />} />
           <Route path="/about" element={<PageAbout />} />
           <Route path="/" element={<Navigate to="/welcome" replace />} />
           <Route path="*" element={<PageNotFound />} />
