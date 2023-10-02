@@ -15,14 +15,14 @@ function App() {
         <nav>
           <NavLink to="/welcome">Welcome</NavLink>
           <NavLink to="/media">Media</NavLink>
-          <NavLink to="/randomizer">Randomizer</NavLink>
+          <NavLink to="/random">Random</NavLink>
           <NavLink to="/about">About</NavLink>
         </nav>
 
         <Routes>
           <Route path="/welcome" element={<PageWelcome />} />
           <Route path="/media" element={<PageMedia />} />
-          <Route path="/randomizer" element={<PageRandom />} />
+          <Route path="/random" element={<PageRandom />} />
           <Route path="/about" element={<PageAbout />} />
           <Route path="/" element={<Navigate to="/welcome" replace />} />
           <Route path="*" element={<PageNotFound />} />

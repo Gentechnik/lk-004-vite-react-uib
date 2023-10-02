@@ -1,6 +1,6 @@
 import MyButtonComponent from "../components/MyButton";
 
-export const PageRandomizer = () => {
+export const PageRandom = () => {
   return (
     <>
       <main className="randomizer_page">
