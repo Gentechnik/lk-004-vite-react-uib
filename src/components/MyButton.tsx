@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { randomizer } from "./Randomizer";
 import memberList from "../data/memberList.json";
 

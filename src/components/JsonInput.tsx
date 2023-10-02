@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import memberList from "../data/memberList.json";
 import { Member } from "./Interfaces";
 
