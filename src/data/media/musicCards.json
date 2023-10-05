@@ -1,0 +1,22 @@
+[
+  {
+    "bandName": "the Pillows",
+    "albumName": "Runners High",
+    "description": "Runners High is an album released by the Pillows on January 22, 1999. It was the last album to feature guest bassist, Tatsuya Kashima. Several songs from the record were later featured in the anime OVA series FLCL by Gainax.",
+    "img": {
+      "src": "images/music/runners-high-pillows.jpg",
+      "alt": "Cover of the Album 'Runners High' from the Pillows",
+      "title": "Cover of the Album 'Runners High' from the Pillows"
+    }
+  },
+  {
+    "bandName": "Gorillaz",
+    "albumName": "Demon Days",
+    "description": "Demon Days is the second studio album by British virtual band Gorillaz. It was first released on 11 May 2005 in Japan and on 23 May 2005 in the United Kingdom by Parlophone and in the United States by Virgin Records.",
+    "img": {
+      "src": "images/music/gorillaz-demon-days.png",
+      "alt": "Cover of the Album 'Demon Days' from the Gorillaz",
+      "title": "Cover of the Album 'Demon Days' from the Gorillaz"
+    }
+  }
+]

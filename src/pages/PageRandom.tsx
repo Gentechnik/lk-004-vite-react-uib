@@ -1,3 +1,4 @@
+import ContentCard from "../components/ContentCard";
 import MyButtonComponent from "../components/MyButton";
 
 export const PageRandom = () => {
@@ -6,6 +7,7 @@ export const PageRandom = () => {
       <main className="randomizer_page">
         <MyButtonComponent />
         {/* <EditableMembers /> */}
+        <ContentCard />
       </main>
     </>
   );

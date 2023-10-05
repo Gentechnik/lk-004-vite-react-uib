@@ -1,4 +1,5 @@
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import ContentCard from "../components/ContentCard";
 export const PageMedia = () => {
   return (
     <>
@@ -18,7 +19,7 @@ export const PageMedia = () => {
               </a>
             </div>
           </div>
-          <div className="content_card">
+          {/* <div className="content_card">
             <img
               src="images/music/runners-high-pillows.jpg"
               alt="Cover of the Album 'Runners High' from the Pillows"
@@ -35,7 +36,11 @@ export const PageMedia = () => {
             </div>
           </div>
           <div className="content_card">
-            <img src="images/music/gorillaz-demon-days.png" alt="#" />
+            <img
+              src="images/music/gorillaz-demon-days.png"
+              alt="Cover of the Album 'Demon Days' from the Gorillaz"
+              title="Cover of the Album 'Demon Days' from the Gorillaz"
+            />
             <div className="content_card_text">
               <h4>Gorillaz - Demon Days</h4>
               <p>
@@ -45,7 +50,8 @@ export const PageMedia = () => {
                 United States by Virgin Records.
               </p>
             </div>
-          </div>
+          </div> */}
+          {ContentCard()}
           <div className="content_card">
             <img
               src="images/music/joji-nectar.png"
