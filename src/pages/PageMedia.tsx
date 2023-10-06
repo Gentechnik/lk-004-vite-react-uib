@@ -1,5 +1,7 @@
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import ContentCardMusic from "../components/ContentCardMusic";
+import ContentCardGames from "../components/ContentCardGames";
+import ContentCardManga from "../components/ConentCardManga";
 export const PageMedia = () => {
   return (
     <>
@@ -115,7 +117,7 @@ export const PageMedia = () => {
             <a href="#media_games_link">GAMES</a>
             <a href="#media_manga_link">MANGA</a>
           </div>
-          <div className="content_card">
+          {/* <div className="content_card">
             <img
               src="images/games/bioshock.jpg"
               alt="Cover of the Game 'Bioshock"
@@ -130,7 +132,7 @@ export const PageMedia = () => {
                 believed.
               </p>
             </div>
-          </div>
+          </div> 
           <div className="content_card">
             <img
               src="images/games/inscryption.jpg"
@@ -150,8 +152,8 @@ export const PageMedia = () => {
           <div className="content_card">
             <img
               src="images/games/monster-hunter-rise.png"
-              alt="Cover of the game 'Monsterhunter Rise"
-              title="Cover of the game 'Monsterhunter Rise"
+              alt="Cover of the game 'Monsterhunter Rise'"
+              title="Cover of the game 'Monsterhunter Rise'"
             />
             <div className="content_card_text">
               <h4>Monsterhunter Rise</h4>
@@ -211,7 +213,8 @@ export const PageMedia = () => {
                 destructible map with various vehicles!
               </p>
             </div>
-          </div>
+          </div>*/}
+          {ContentCardGames()}
         </section>
         <section className="media_page_manga" id="media_manga_link">
           <div className="media_page_headings">
@@ -219,7 +222,7 @@ export const PageMedia = () => {
             <a href="#media_games_link">GAMES</a>
             <a href="#media_manga_link">MANGA</a>
           </div>
-          <div className="content_card">
+          {/* <div className="content_card">
             <img
               src="images/manga/a-silent-voice.jpg"
               alt="Cover of the Manga 'A Silent Voice' from Yoshitoki Ōima"
@@ -251,7 +254,7 @@ export const PageMedia = () => {
                 brink of extinction as their own defenses turn on them.
               </p>
             </div>
-          </div>
+          </div> 
           <div className="content_card">
             <img
               src="images/manga/one-punch-man.png"
@@ -320,7 +323,8 @@ export const PageMedia = () => {
                 for his meat.
               </p>
             </div>
-          </div>
+          </div>*/}
+          {ContentCardManga()}
         </section>
       </main>
     </>
