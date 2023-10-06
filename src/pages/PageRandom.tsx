@@ -1,4 +1,4 @@
-import ContentCard from "../components/ContentCard";
+import ContentCard from "../components/ContentCardMusic";
 import MyButtonComponent from "../components/MyButton";
 
 export const PageRandom = () => {

@@ -1,5 +1,5 @@
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
-import ContentCard from "../components/ContentCard";
+import ContentCardMusic from "../components/ContentCardMusic";
 export const PageMedia = () => {
   return (
     <>
@@ -50,8 +50,7 @@ export const PageMedia = () => {
                 United States by Virgin Records.
               </p>
             </div>
-          </div> */}
-          {ContentCard()}
+          </div>
           <div className="content_card">
             <img
               src="images/music/joji-nectar.png"
@@ -107,7 +106,8 @@ export const PageMedia = () => {
                 with him into the titular Abyss in search of her mother.
               </p>
             </div>
-          </div>
+          </div> */}
+          {ContentCardMusic()}
         </section>
         <section className="media_page_games" id="media_games_link">
           <div className="media_page_headings">

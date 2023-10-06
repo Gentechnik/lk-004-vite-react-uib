@@ -1,6 +1,6 @@
 import musicCards from "../data/media/musicCards.json";
 
-const ContentCard = () => {
+const ContentCardMusic = () => {
   return musicCards.map((m) => {
     return (
       <div className="content_card">
@@ -16,4 +16,4 @@ const ContentCard = () => {
   });
 };
 
-export default ContentCard;
+export default ContentCardMusic;

@@ -18,5 +18,45 @@
       "alt": "Cover of the Album 'Demon Days' from the Gorillaz",
       "title": "Cover of the Album 'Demon Days' from the Gorillaz"
     }
+  },
+  {
+    "bandName": "Joji",
+    "albumName": "Nectar",
+    "description": "Nectar is the second studio album by Japanese singer-songwriter Joji, released on 25 September 2020 via 88rising.",
+    "img": {
+      "src": "images/music/joji-nectar.png",
+      "alt": "Cover of the Album 'Nectar' from Joji",
+      "title": "Cover of the Album 'Nectar' from Joji"
+    }
+  },
+  {
+    "bandName": "NieR Gestalt & Replicant",
+    "albumName": "Videogame OST",
+    "description": "NieR Gestalt & Replicant Original Soundtrack Soundtrack album by Keigo Hoashi, Keiichi Okabe, and SQUARE ENIX MUSIC.",
+    "img": {
+      "src": "images/music/nier-replicant-ost.jpg",
+      "alt": "Cover of the Original Soundtrack of the Game 'Nier Replicant'",
+      "title": "Cover of the Original Soundtrack of the Game 'Nier Replicant'"
+    }
+  },
+  {
+    "bandName": "Oliver Tree",
+    "albumName": "Ugly Is Beautiful",
+    "description": "Ugly Is Beautiful is the debut major-label studio album by American singer-songwriter Oliver Tree.",
+    "img": {
+      "src": "images/music/oliver-tree-life-goes-on.jpg",
+      "alt": "Cover of the Album 'Ugly is Beautiful' from Oliver Tree",
+      "title": "Cover of the Album 'Ugly is Beautiful' from Oliver Tree"
+    }
+  },
+  {
+    "bandName": "Made in Abyss",
+    "albumName": "Anime OST",
+    "description": "A young girl finds and befriends a humanoid robot and descends with him into the titular Abyss in search of her mother.",
+    "img": {
+      "src": "images/music/made-in-abyss.png",
+      "alt": "Cover of the Original Soundtrack of the Series 'Made in Abyss'",
+      "title": "Cover of the Original Soundtrack of the Series 'Made in Abyss'"
+    }
   }
 ]
