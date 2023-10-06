@@ -17,6 +17,23 @@ body {
     text-decoration: none;
     font-family: $secondary_font;
   }
+  div.page_top_button {
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    a {
+      display: flex;
+      justify-content: center;
+      font-size: 3.4rem;
+      padding: 2rem;
+      &:hover {
+        -webkit-animation: shake-vertical 2.3s
+          cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+        animation: shake-vertical 2.3s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+          both;
+      }
+    }
+  }
   nav {
     display: flex;
     justify-content: space-evenly;
@@ -110,6 +127,7 @@ body {
         width: 90%;
         margin: 4% 0;
       }
+
       section.media_page_music,
       section.media_page_games,
       section.media_page_manga {
@@ -141,23 +159,6 @@ body {
                 animation: text-shadow-pop-bottom 0.6s both;
               }
               //outline: 2px solid red;
-            }
-          }
-          div {
-            right: 0;
-            bottom: 0;
-            position: fixed;
-            a {
-              display: flex;
-              justify-content: center;
-              font-size: 3.4rem;
-              padding: 2rem;
-              &:hover {
-                -webkit-animation: shake-vertical 2.3s
-                  cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-                animation: shake-vertical 2.3s
-                  cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-              }
             }
           }
         }

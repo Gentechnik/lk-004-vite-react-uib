@@ -1,7 +1,8 @@
-import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import ContentCardMusic from "../components/ContentCardMusic";
 import ContentCardGames from "../components/ContentCardGames";
 import ContentCardManga from "../components/ConentCardManga";
+import MediaNavLinks from "../components/MediaNavLinks";
+import PageTopButton from "../components/PageTopButton";
 export const PageMedia = () => {
   return (
     <>
@@ -11,16 +12,18 @@ export const PageMedia = () => {
           can recommend.
         </h2>
         <section className="media_page_music" id="media_music_link">
-          <div className="media_page_headings">
+          {/* <div className="media_page_headings">
             <a href="#media_music_link">MUSIC</a>
             <a href="#media_games_link">GAMES</a>
             <a href="#media_manga_link">MANGA</a>
-            <div>
-              <a href="#">
-                <BsFillArrowUpCircleFill />
-              </a>
-            </div>
-          </div>
+          </div> */}
+          <MediaNavLinks />
+          {/* <div className="page_top_button">
+            <a href="#">
+              <BsFillArrowUpCircleFill />
+            </a>
+          </div>  */}
+          <PageTopButton />
           {/* <div className="content_card">
             <img
               src="images/music/runners-high-pillows.jpg"
@@ -109,14 +112,15 @@ export const PageMedia = () => {
               </p>
             </div>
           </div> */}
-          {ContentCardMusic()}
+          <ContentCardMusic />
         </section>
         <section className="media_page_games" id="media_games_link">
-          <div className="media_page_headings">
+          {/* <div className="media_page_headings">
             <a href="#media_music_link">MUSIC</a>
             <a href="#media_games_link">GAMES</a>
             <a href="#media_manga_link">MANGA</a>
-          </div>
+          </div> */}
+          <MediaNavLinks />
           {/* <div className="content_card">
             <img
               src="images/games/bioshock.jpg"
@@ -214,14 +218,15 @@ export const PageMedia = () => {
               </p>
             </div>
           </div>*/}
-          {ContentCardGames()}
+          <ContentCardGames />
         </section>
         <section className="media_page_manga" id="media_manga_link">
-          <div className="media_page_headings">
+          {/* <div className="media_page_headings">
             <a href="#media_music_link">MUSIC</a>
             <a href="#media_games_link">GAMES</a>
             <a href="#media_manga_link">MANGA</a>
-          </div>
+          </div> */}
+          <MediaNavLinks />
           {/* <div className="content_card">
             <img
               src="images/manga/a-silent-voice.jpg"
@@ -324,7 +329,7 @@ export const PageMedia = () => {
               </p>
             </div>
           </div>*/}
-          {ContentCardManga()}
+          <ContentCardManga />
         </section>
       </main>
     </>

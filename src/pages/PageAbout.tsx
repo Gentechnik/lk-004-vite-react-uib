@@ -1,3 +1,5 @@
+import PageTopButton from "../components/PageTopButton";
+
 export const PageAbout = () => {
   return (
     <>
@@ -16,6 +18,7 @@ export const PageAbout = () => {
               care.
             </p>
           </div>
+          <PageTopButton />
         </section>
       </main>
     </>

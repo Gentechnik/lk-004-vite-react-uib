@@ -1,5 +1,5 @@
-import ContentCard from "../components/ContentCardMusic";
 import MyButtonComponent from "../components/MyButton";
+import PageTopButton from "../components/PageTopButton";
 
 export const PageRandom = () => {
   return (
@@ -7,7 +7,7 @@ export const PageRandom = () => {
       <main className="randomizer_page">
         <MyButtonComponent />
         {/* <EditableMembers /> */}
-        <ContentCard />
+        <PageTopButton />
       </main>
     </>
   );

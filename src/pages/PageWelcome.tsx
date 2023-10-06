@@ -1,3 +1,5 @@
+import PageTopButton from "../components/PageTopButton";
+
 export const PageWelcome = () => {
   return (
     <>
@@ -31,6 +33,7 @@ export const PageWelcome = () => {
             <img src="images/placeholder.png" alt="Placeholder image" />
           </div>
         </section>
+        <PageTopButton />
       </main>
     </>
   );
