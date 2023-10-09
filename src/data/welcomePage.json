@@ -1,0 +1,32 @@
+[
+  {
+    "link": "https://gentechnik.github.io/cautious-umbrella/",
+    "linktext": "My First HTML/CSS Site",
+    "textBox": "This Site was created by me towards the end of my Orientationcourse.",
+    "img": {
+      "src": "images/my-first-html-css-site.png",
+      "alt": "Image of my first HMTL/CSS Site",
+      "title": "Image of my first HMTL/CSS Site"
+    }
+  },
+  {
+    "link": "#",
+    "linktext": "New Project #1",
+    "textBox": "Coming Soon!",
+    "img": {
+      "src": "images/placeholder.png",
+      "alt": "Placeholder image without content",
+      "title": "Placeholder image without content"
+    }
+  },
+  {
+    "link": "#",
+    "linktext": "New Project #2",
+    "textBox": "Coming Soon!",
+    "img": {
+      "src": "images/placeholder.png",
+      "alt": "Placeholder image without content",
+      "title": "Placeholder image without content"
+    }
+  }
+]

@@ -101,8 +101,17 @@ body {
         align-items: center;
         flex-direction: column;
         a {
+          padding: 0.5rem 1rem;
+          border-radius: 100px;
+          width: 80%;
+          align-self: flex-start;
           font-weight: bold;
           font-size: 1.4rem;
+          background-color: white;
+          // outline: 2px solid red;
+        }
+        p {
+          padding-left: 1rem;
         }
         img {
           outline: 1px solid white;
