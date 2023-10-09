@@ -25,7 +25,9 @@ function App() {
           <Route path="/" element={<Navigate to="/welcome" replace />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
-        <Footer />
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </>
   );

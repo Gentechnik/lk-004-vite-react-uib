@@ -3,7 +3,7 @@ import { FaRandom } from "react-icons/fa";
 
 export const Footer = () => {
   return (
-    <footer>
+    <>
       <h3>
         If you want to reach out to me, down below are my Github and 2 random
         links
@@ -40,7 +40,7 @@ export const Footer = () => {
           </a>
         </li>
       </ul>
-    </footer>
+    </>
   );
 };
 
