@@ -1,13 +1,14 @@
 import { ContentCardCategory } from "./Interfaces";
-import musicCards from "../data/media/musicCards.json";
-import gameCards from "../data/media/gameCards.json";
-import mangaCards from "../data/media/mangaCards.json";
+import { useContext } from "react";
+import { AppContext } from "../AppContext";
 
 const ContentCard: React.FC<ContentCardCategory> = ({ category }) => {
+  const { albums, games, manga } = useContext(AppContext);
+
   const contentCard = () => {
     switch (category) {
       case "music":
-        return musicCards.map((m) => {
+        return albums.map((m) => {
           return (
             <div className="content_card">
               <img src={m.img.src} alt={m.img.alt} title={m.img.title} />
@@ -21,7 +22,7 @@ const ContentCard: React.FC<ContentCardCategory> = ({ category }) => {
           );
         });
       case "games":
-        return gameCards.map((m) => {
+        return games.map((m) => {
           return (
             <div className="content_card">
               <img src={m.img.src} alt={m.img.alt} title={m.img.title} />
@@ -33,7 +34,7 @@ const ContentCard: React.FC<ContentCardCategory> = ({ category }) => {
           );
         });
       case "manga":
-        return mangaCards.map((m) => {
+        return manga.map((m) => {
           return (
             <div className="content_card">
               <img src={m.img.src} alt={m.img.alt} title={m.img.title} />
