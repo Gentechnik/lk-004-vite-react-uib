@@ -1,5 +1,6 @@
 import "./assets/App.scss";
-import { useContext } from "react";
+// import { useContext } from "react";
+// import { AppContext } from "./AppContext";
 import { NavLink, Routes, Route, Navigate } from "react-router-dom";
 import { PageWelcome } from "./pages/PageWelcome";
 import { PageMedia } from "./pages/PageMedia";
@@ -7,7 +8,6 @@ import { PageAbout } from "./pages/PageAbout";
 import { PageRandom } from "./pages/PageRandom";
 import { PageNotFound } from "./pages/PageNotFound";
 import Footer from "./components/Footer";
-import { AppContext } from "./AppContext";
 
 function App() {
   return (
