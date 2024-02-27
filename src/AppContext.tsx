@@ -1,6 +1,13 @@
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
-import { TAlbum, TManga, TGame, GameSchema } from "./interfaces.ts";
+import {
+  TAlbum,
+  TManga,
+  TGame,
+  GameSchema,
+  AlbumSchema,
+  MangaSchema,
+} from "./interfaces.ts";
 
 interface IAppContext {
   games: TGame[];
@@ -26,7 +33,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
       for (const _game of response.data) {
         const parseResult = GameSchema.safeParse(_game);
         if (parseResult.success) {
-          _games.push(_game);
+          _games.push(parseResult.data);
         } else {
           console.log(`LOG ENTRY: bad game object (${JSON.stringify(_game)})`);
         }
@@ -38,7 +45,17 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
   useEffect(() => {
     (async () => {
       const response = await axios.get(`${backendUrl}/music`);
-      const _albums = response.data;
+      const _albums = [];
+      for (const _album of response.data) {
+        const parseResult = AlbumSchema.safeParse(_album);
+        if (parseResult.success) {
+          _albums.push(parseResult.data);
+        } else {
+          console.log(
+            `LOG ENTRY: bad album object (${JSON.stringify(_album)})`
+          );
+        }
+      }
       setAlbums(_albums);
     })();
   }, []);
@@ -46,8 +63,18 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
   useEffect(() => {
     (async () => {
       const response = await axios.get(`${backendUrl}/manga`);
-      const _manga = response.data;
-      setManga(_manga);
+      const _mangas = [];
+      for (const _manga of response.data) {
+        const parseResult = MangaSchema.safeParse(_manga);
+        if (parseResult.success) {
+          _mangas.push(parseResult.data);
+        } else {
+          console.log(
+            `LOG ENTRY: bad manga object (${JSON.stringify(_manga)})`
+          );
+        }
+      }
+      setManga(_mangas);
     })();
   }, []);
 
