@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
-import { TAlbum, TManga, TGame } from "./interfaces.ts";
+import { TAlbum, TManga, TGame, GameSchema } from "./interfaces.ts";
 
 interface IAppContext {
   games: TGame[];
@@ -22,7 +22,15 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
   useEffect(() => {
     (async () => {
       const response = await axios.get(`${backendUrl}/games`);
-      const _games = response.data;
+      const _games = [];
+      for (const _game of response.data) {
+        const parseResult = GameSchema.safeParse(_game);
+        if (parseResult.success) {
+          _games.push(_game);
+        } else {
+          console.log(`LOG ENTRY: bad game object (${JSON.stringify(_game)})`);
+        }
+      }
       setGames(_games);
     })();
   }, []);
